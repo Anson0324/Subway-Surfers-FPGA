@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Mar  6 21:39:49 2024
+# Process ID: 34616
+# Current directory: C:/Users/aa271/Desktop/Lab6
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent57724 C:\Users\aa271\Desktop\Lab6\Lab6.xpr
+# Log file: C:/Users/aa271/Desktop/Lab6/vivado.log
+# Journal file: C:/Users/aa271/Desktop/Lab6\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/aa271/Desktop/Lab6/Lab6.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/aa271/Desktop/Lab6/Lab6.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/aa271/Desktop/Lab6/Lab6.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+archive_project C:/Users/aa271/Desktop/Lab6.xpr.zip -temp_dir C:/Users/aa271/Desktop/Lab6/.Xil/Vivado-34616-R5-5600 -force -include_local_ip_cache
+archive_project C:/Users/aa271/Desktop/Lab6_FIX_ADD_BUG.xpr.zip -temp_dir C:/Users/aa271/Desktop/Lab6/.Xil/Vivado-34616-R5-5600 -force -include_local_ip_cache

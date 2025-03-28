@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="test_top_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="test_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="2379804436430fs"></ZoomStartTime>
+      <ZoomEndTime time="2379804470715fs"></ZoomEndTime>
+      <Cursor1Time time="2379804440000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="177"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="2" />
+   <wvobject fp_name="/test_top/UUT/TC_out" type="array">
+      <obj_property name="ElementShortName">TC_out[14:0]</obj_property>
+      <obj_property name="ObjectShortName">TC_out[14:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top/UUT/out_hover" type="logic">
+      <obj_property name="ElementShortName">out_hover</obj_property>
+      <obj_property name="ObjectShortName">out_hover</obj_property>
+   </wvobject>
+</wave_config>

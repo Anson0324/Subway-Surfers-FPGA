@@ -1,0 +1,183 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Wed Mar  6 21:42:52 2024
+| Host         : R5-5600 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   105 |
+|    Minimum number of control sets                        |   105 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   283 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   105 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |    92 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |    12 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     1 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              45 |           22 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |             552 |          227 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------------+-----------------------------------------------------+------------------+------------------+----------------+
+|         Clock Signal         |                    Enable Signal                    | Set/Reset Signal | Slice Load Count | Bel Load Count |
++------------------------------+-----------------------------------------------------+------------------+------------------+----------------+
+|  not_so_slow/slowclk/clk_out | not_so_slow/slowclk/XLXI_40/CEO                     |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | not_so_slow/slowclk/XLXI_45/CEO                     |                  |                1 |              4 |
+|  not_so_slow/slowclk/clk_out | not_so_slow/slowclk/XLXI_38/I_36_31_n_44            |                  |                3 |              4 |
+|  not_so_slow/slowclk/clk_out | not_so_slow/slowclk/XLXI_39/CEO                     |                  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | Sy/Pixel_Add/row_counter/counter1/clock_enable      |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | Sy/Pixel_Add/column_counter/counter0/clock_enable_0 |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | Pixel_A/row_counter/counter0/clock_enable           |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | Pixel_A/row_counter/counter0/clock_enable_0         |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | Pixel_A/row_counter/counter0/clock_enable_7         |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | Pixel_A/row_counter/counter0/clock_enable_1         |                  |                3 |              5 |
+|  not_so_slow/slowclk/clk_out | Pixel_A/row_counter/counter0/clock_enable_4         |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | Pixel_A/row_counter/counter1/clock_enable           |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | trackL/TC_train2/counter0/FF2_2                     |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | trackL/TC_train1/counter0/FF2_1                     |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | Sy/Pixel_Add/column_counter/counter1/clock_enable   |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | Sy/Pixel_Add/row_counter/counter0/clock_enable_0    |                  |                3 |              5 |
+|  not_so_slow/slowclk/clk_out | Sy/Pixel_Add/row_counter/counter0/clock_enable      |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | Pixel_A/column_counter/counter0/clock_enable_0      |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | Pixel_A/column_counter/counter2/CE0                 |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | Pixel_A/column_counter/counter2/FF3_4               |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | Pixel_A/column_counter/counter2/CE034_out           |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | Pixel_A/column_counter/counter2/CE040_out           |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | Pixel_A/column_counter/counter2/FF3_6               |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | Pixel_A/column_counter/counter2/FF3_7               |                  |                3 |              5 |
+|  not_so_slow/slowclk/clk_out | Pixel_A/column_counter/counter2/FF3_8               |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | Pixel_A/column_counter/counter2/FF3_5               |                  |                3 |              5 |
+|  not_so_slow/slowclk/clk_out | Pixel_A/column_counter/counter2/FF3_9               |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | Pixel_A/column_counter/counter2/CE016_out           |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | Pixel_A/column_counter/counter2/Q6_FF[3]_0          |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | Pixel_A/column_counter/counter2/Q6_FF[3]            |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | trackM/train2/counter1/clock_enable                 |                  |                1 |              5 |
+|  not_so_slow/slowclk/clk_out | Pixel_A/column_counter/counter1/clock_enable        |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | trackL/init1/counter0/FF3_2                         |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | trackL/train2/counter1/FF0_1                        |                  |                1 |              5 |
+|  not_so_slow/slowclk/clk_out | trackL/train2/counter1/FF4_3                        |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | trackL/train2/counter1/Q6_FF[1]                     |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | trackM/train2/counter1/FF4_3                        |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | trackL/train2/counter1/clock_enable                 |                  |                1 |              5 |
+|  not_so_slow/slowclk/clk_out | trackL/train2/counter1/clock_enable_0               |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | trackM/TC_train1/counter0/FF2_1                     |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | trackL/train1/counter1/FF0_i_3__24                  |                  |                3 |              5 |
+|  not_so_slow/slowclk/clk_out | trackL/train1/counter1/FF0_i_3__23                  |                  |                1 |              5 |
+|  not_so_slow/slowclk/clk_out | trackL/train1/counter1/FF0_1                        |                  |                1 |              5 |
+|  not_so_slow/slowclk/clk_out | TSM/Q6_FF[1]_0                                      |                  |                4 |              5 |
+|  not_so_slow/slowclk/clk_out | trackL/train1/counter1/FF4_3                        |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | trackL/train1/counter1/Q6_FF[1]                     |                  |                3 |              5 |
+|  not_so_slow/slowclk/clk_out | trackL/train1/counter1/clock_enable                 |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | trackM/TC_train2/counter0/FF2_2                     |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | score_counterM/counter1/clock_enable_0              |                  |                1 |              5 |
+|  not_so_slow/slowclk/clk_out | score_counterR/counter1/clock_enable_0              |                  |                1 |              5 |
+|  not_so_slow/slowclk/clk_out | slug_State_Machine/clock_enable                     |                  |                1 |              5 |
+|  not_so_slow/slowclk/clk_out | slug_State_Machine/clock_enable_0                   |                  |                3 |              5 |
+|  not_so_slow/slowclk/clk_out | move_left_counter/counter0/clock_enable_0           |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | TSM/Q6_FF[1]_2                                      |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | TSM/clock_enable                                    |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | TSM/Q0_FF_1                                         |                  |                3 |              5 |
+|  not_so_slow/slowclk/clk_out | TSM/Q6_FF[3]_3                                      |                  |                3 |              5 |
+|  not_so_slow/slowclk/clk_out | TSM/clock_enable_0                                  |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | TSM/Q6_FF[3]_2                                      |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | trackR/TC_train1/counter0/FF2_1                     |                  |                3 |              5 |
+|  not_so_slow/slowclk/clk_out | bar_counter/counter0/clock_enable                   |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | bar_counter/counter1/clock_enable                   |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | flashing/counter1/clock_enable_0                    |                  |                3 |              5 |
+|  not_so_slow/slowclk/clk_out | flashing/counter1/clock_enable                      |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | flashing/counter1/FF0_3                             |                  |                3 |              5 |
+|  not_so_slow/slowclk/clk_out | move_left_counter/counter1/clock_enable             |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | score_counterL/counter1/clock_enable_0              |                  |                1 |              5 |
+|  not_so_slow/slowclk/clk_out | move_right_counter/counter0/clock_enable_0          |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | move_right_counter/counter1/clock_enable            |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | trackR/train2/counter1/FF0_1                        |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | trackR/init1/counter0/FF3_2                         |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | trackR/train2/counter1/FF4_2                        |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | trackR/train2/counter1/Q6_FF[3]                     |                  |                3 |              5 |
+|  not_so_slow/slowclk/clk_out | trackR/train2/counter1/clock_enable                 |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | trackR/train2/counter1/clock_enable_0               |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | trackR/train1/counter1/FF0_1                        |                  |                1 |              5 |
+|  not_so_slow/slowclk/clk_out | trackR/train1/counter1/FF0_i_3__65                  |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | trackR/train1/counter1/clock_enable                 |                  |                4 |              5 |
+|  not_so_slow/slowclk/clk_out | trackR/train1/counter1/FF4_3                        |                  |                3 |              5 |
+|  not_so_slow/slowclk/clk_out | trackR/train1/counter1/Q6_FF[2]                     |                  |                3 |              5 |
+|  not_so_slow/slowclk/clk_out | trackR/train1/counter1/Q6_FF[2]_0                   |                  |                1 |              5 |
+|  not_so_slow/slowclk/clk_out | trackM/train1/counter0/clock_enable                 |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | trackM/train1/counter1/FF0_1                        |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | trackM/train1/counter1/Q6_FF[3]_1                   |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | trackM/train1/counter1/Q6_FF[3]                     |                  |                3 |              5 |
+|  not_so_slow/slowclk/clk_out | trackM/train1/counter1/FF4_3                        |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | trackM/init1/counter0/Q6_FF[3]_0                    |                  |                1 |              5 |
+|  not_so_slow/slowclk/clk_out | trackM/train1/counter1/Q6_FF[3]_0                   |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | trackR/TC_train2/counter0/FF2_2                     |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | trackM/train2/counter0/clock_enable                 |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | trackM/train2/counter1/FF0_1                        |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | trackM/train2/counter1/Q6_FF[3]                     |                  |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | trackL/train2/counter1/Q6_FF[1]_0                   |                  |                2 |              8 |
+|  not_so_slow/slowclk/clk_out | trackL/train2/counter1/run0                         |                  |                3 |              8 |
+|  not_so_slow/slowclk/clk_out | trackL/train1/counter1/CE[0]                        |                  |                4 |              8 |
+|  not_so_slow/slowclk/clk_out | trackR/train2/counter1/run0                         |                  |                4 |              8 |
+|  not_so_slow/slowclk/clk_out | trackL/train1/counter1/run07_out                    |                  |                2 |              8 |
+|  not_so_slow/slowclk/clk_out | trackM/train1/counter1/CE[0]                        |                  |                4 |              8 |
+|  not_so_slow/slowclk/clk_out | trackM/train2/counter1/run0                         |                  |                3 |              8 |
+|  not_so_slow/slowclk/clk_out | trackM/train2/counter1/Q6_FF[3]_0                   |                  |                3 |              8 |
+|  not_so_slow/slowclk/clk_out | trackR/train2/counter1/Q6_FF[3]_0                   |                  |                3 |              8 |
+|  not_so_slow/slowclk/clk_out | trackR/train1/counter1/run07_out                    |                  |                2 |              8 |
+|  not_so_slow/slowclk/clk_out | trackR/train1/counter1/CE[0]                        |                  |                3 |              8 |
+|  not_so_slow/slowclk/clk_out | trackM/train1/counter1/run07_out                    |                  |                2 |              8 |
+|  not_so_slow/slowclk/clk_out |                                                     |                  |               22 |             45 |
++------------------------------+-----------------------------------------------------+------------------+------------------+----------------+
+
+
